@@ -3,7 +3,16 @@
    <head>
       <title> Localizações mapas </title>
 	  <meta charset="UTF-8">
-	  <link rel="stylesheet" type="text/css" href="styles/style.css" />	  
+	  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+	  
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+		crossorigin=""/>
+		
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""></script>
+				
 	   </head>
 	   
 	   <body>
@@ -12,9 +21,26 @@
 	   <a href="contato.html">Contato</a>
 	   <a href="sobre.html">Sobre</a>
 	   </div>
+	   	   
+		<div id="box">
+			<input type="text" name="endereco" placeholder="Endereco" id="endereco">
+			<button type="button">Pesquisar</button>
+		</div>
+		
+	   <div id="mapid"></div>
 	   
-	   <div>
-	   <iframe id="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1BQrJdcqOptdA9TISxb7ialaDLqujwVU2" ></iframe>
+	   <script type="text/javascript" src="scripts/mapa.js"></script>
+	   <script src="https://maps.googleapis.com/maps/api/js?key=<key>&libraries=places"></script>
+	   
+	   <!-- Para utilização do mapa do Google Maps
+	   <iframe id="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1BQrJdcqOptdA9TISxb7ialaDLqujwVU2" ></iframe>-->
+	   
+	   <div id="fotos">
+	   <script type="text/javascript" src="scripts/foto.js"></script>
+	   </div>
+	   
+	   <div id="rodape">
+	   <p>O site contém mapa e plugins do Leaflet</p>
 	   </div>
 	   </body>
 	   
