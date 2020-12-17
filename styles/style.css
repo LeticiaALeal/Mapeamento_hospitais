@@ -1,3 +1,37 @@
+
+	* 
+	{
+	font-family:Georgia, 'Times New Roman', Times, serif;    
+	}
+
+	body 
+            {
+            background-color:rgba(5, 97, 236, 0.712);
+			}
+			
+	input
+        {
+            font-size: 17px;
+            width: 160px; 
+            height: 14px;
+			padding: 5px;
+			font-style: oblique;
+			background-color: whitesmoke;
+			border: 1px solid rgb(134, 133, 133);
+
+		} 
+		
+	#botaopesquisar
+	{
+		width: 98px; 
+		height: 23px;
+		background-color: whitesmoke;
+		border: 1px solid rgb(134, 133, 133);
+		font-weight:bold;
+        
+	}	
+	
+	
 	.titulo{
 		text-align: center;
 		padding-top: 10px;
@@ -19,8 +53,9 @@
 			width: 100%;
 			}
 			
-	#box{
-			padding-bottom: 10px;
+	#box
+	{
+			padding-bottom: 10px;			
 	}
 	
 	#fotos{
@@ -47,5 +82,34 @@
 		background-color: black;
 		color: white;
 		text-align: center;				
+	}
+
+	.bodysobrecontato
+	{
+		background-color: white;
+	}
+
+	#titulo
+	{
+		font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		text-align: center;
+	}
+
+	.nos
+	{
+		margin-left: 10px;
+		font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		
+	}
+
+	#tituloconosco
+	{
+		text-align: center;
+	}
+	
+	 #botaocontato
+	{
+		
+
 	}
 

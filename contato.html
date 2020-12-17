@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title> Localizações mapas </title>
-	  <meta charset="UTF-8">	  
+      <title> Contato </title>
+      <meta charset="UTF-8">	  
+      
+      <link rel="stylesheet" type="text/css" href="styles/style.css" />
 	   </head>
 	   
-	   <body>
+	   <body class="bodysobrecontato">
 	   
-	   <h2> <a id="contato"> <strong>Entre em contato comigo:</strong> </a> </h2>
-	   
-	   <div> 
-	   <a href="index.html">Index</a>
-	   <a href="sobre.html">Sobre</a>
-	   </div>
+		<div id="titulo">
+            <h1>Entre em contato conosco</h1>	   
+           
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre</a>
+        </div>
 	   <br>
 	   
     <form action="/pagina-confirmado-envio-mensagem" method="POST">
@@ -24,7 +26,7 @@
 
             <div>
                 <label for="tel">Telefone</label>
-                <input type="text" id="tel" name="tel" placeholder="Seu telefone" required/> <br> <br>
+                <input type="text" id="tel" name="tel" placeholder="(00) 00000-0000" required/> <br> <br>
             </div>
 
             <div>
@@ -49,7 +51,7 @@
                 <textarea id="mensagem"></textarea> <br><br>
             </div>
 
-            <div class="button">
+            <div id="botaocontato">
                 <button type="submit">Enviar sua mensagem</button>
             </div>
 
