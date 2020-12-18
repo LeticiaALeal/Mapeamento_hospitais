@@ -9,34 +9,34 @@
 		}).addTo(mymap);
 		
 		var marker = L.marker([-22.92087, -47.11981]).addTo(mymap).bindPopup("<b>Hospital PUC Campinas</b><br>" +
-		"Av. John Boyd Dunlop,S/N - Jardim Londres, Campinas - SP, 13034-685").openPopup();		
+		"Avenida John Boyd Dunlop, S/N - Jardim Londres, Campinas - SP, 13034-685 <br> Site: http://www.hospitalpuc-campinas.com.br/ <br> Telefone: (19) 3343-8600").openPopup();
 		
 		var marker = L.marker([-22.96326, -47.13478]).addTo(mymap).bindPopup("<b>Hospital Prefeito Edivaldo Orsi</b><br>" + 
-		"Av.Ruy Rodrigues, 3434 - Chácara São José, Campinas - SP, 13060-646").openPopup();
+		"Avenida Ruy Rodrigues, 3434 - Chácara São José, Campinas - SP, 13060-646 <br> Site: http://www.saude.campinas.sp.gov.br <br> Telefone: (19) 3772-8300").openPopup();
 		
 		var marker = L.marker([-22.9161, -47.06855]).addTo(mymap).bindPopup("<b>Hospital Mário Gatti</b><br>" + 
-		"Av. Pref. Faria Lima, 340 - Parque Italia, Campinas - SP, 13036-902").openPopup();
+		"Avenida Prefeito Faria Lima, 340 - Parque Italia, Campinas - SP, 13036-902 <br> Site: http://www.hmmg.sp.gov.br/ <br> Telefone: (19) 3772-5700").openPopup();
 		
 		var marker = L.marker([-22.82695, -47.06411]).addTo(mymap).bindPopup("<b>Hospital de Clínicas</b><br>" + 
-		"R. Vital Brasil, 251 - Cidade Universitária, Campinas - SP, 13083-888").openPopup();
+		"Rua Vital Brasil, 251 - Cidade Universitária, Campinas - SP, 13083-888 <br> Site: http://www.hmmg.sp.gov.br/ <br> Telefone: (19) 3772-5700").openPopup();
 		
 		var marker = L.marker([-22.91758, -47.05944]).addTo(mymap).bindPopup("<b>Hospital Samaritano Campinas</b><br>" + 
-		"Rua Eng. Monlevade, 206 - Vila Joao Jorge, Campinas - SP, 13041-304").openPopup();
+		"Rua Engenheiro Monlevade, 206 - Vila Joao Jorge, Campinas - SP, 13041-304 <br> Site: http://www.samaritanocampinas.com.br/ <br> Telefone: (19) 3726-1000").openPopup();
 		
 		var marker = L.marker([-22.90307, -47.04128]).addTo(mymap).bindPopup("<b>Hospital Vera Cruz De Campinas</b><br>" + 
-		"Av. Andrade Neves, 402 - Botafogo, Campinas - SP, 13013-908").openPopup();
+		"Avenida Andrade Neves, 402 - Botafogo, Campinas - SP, 13013-908 <br> Site: http://www.hospitalveracruz.com.br/ <br> Telefone: (19) 3734-3000").openPopup();
 		
 		var marker = L.marker([-22.9005, -47.05495]).addTo(mymap).bindPopup("<b>Santa Casa Campinas</b><br>" + 
-		"Av. Júlio de Mesquita, 571 - Cambuí, Campinas - SP, 13024-180").openPopup();
+		"Avenida Júlio de Mesquita, 571 - Cambuí, Campinas - SP, 13024-180 <br> Site: http://santacasacampinas.com.br/ <br> Telefone: (19) 2515-3100").openPopup();
 		
 		var marker = L.marker([-22.89955, -47.06323]).addTo(mymap).bindPopup("<b>Maternidade de Campinas</b><br>" + 
-		"Av. Orosimbo Maia, 165 - Vila Itapura, Campinas - SP, 13023-002").openPopup();
+		"Avenida Orosimbo Maia, 165 - Vila Itapura, Campinas - SP, 13023-002 <br> Site: http://maternidadedecampinas.com.br <br> Telefone: (19) 3306-6000").openPopup();
 		
 		var marker = L.marker([-22.91416, -47.0648]).addTo(mymap).bindPopup("<b>Hospital Unimed Campinas</b><br>" + 
-		"R. São Carlos, 369 - Vila Industrial, Campinas - SP, 13035-420").openPopup();
+		"Rua São Carlos, 369 - Vila Industrial, Campinas - SP, 13035-420 <br> Site: https://www.unimedcampinas.com.br <br> Telefone: (19) 3773-9310").openPopup();
 		
 		var marker = L.marker([-22.89251, -47.06379]).addTo(mymap).bindPopup("<b>Hospital Renascença Campinas</b><br>" + 
-		"Av. Barão de Itapura, 1444 - Jardim Guanabara, Campinas - SP, 13020-432").openPopup();
+		"Avenida Barão de Itapura, 1444 - Jardim Guanabara, Campinas - SP, 13020-432 <br> Site: gndi.com.br <br> Telefone: (19) 3727-5200").openPopup();
 		
 		
 		
