@@ -23,10 +23,14 @@
 	   </div>
 	   	   
 		<div id="box">
-			<input type="text" name="endereco" placeholder="Digite o endereço" id="endereco">
-			<button id='botaopesquisar'type="button">Pesquisar</button>
+		<script type="text/javascript" src="scripts/busca.js"></script>
+			<input type="text" name="txtBusca" placeholder="Digite o endereço" id="txtBusca">
+			<button id='botaopesquisar'type="button" onclick="javascript:buscar();">Pesquisar</button>						
+			<button id='botaofavoritar'type="button" onclick="javascript:favoritar();">Favoritar</button>
 		</div>
 		
+		<div id="resultPesquisa"> 
+		</div>
 	   <div id="mapid"></div>
 	   
 	   <script type="text/javascript" src="scripts/mapa.js"></script>

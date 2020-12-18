@@ -12,7 +12,7 @@
 	input
         {
             font-size: 17px;
-            width: 160px; 
+            width: 300px; 
             height: 14px;
 			padding: 5px;
 			font-style: oblique;
@@ -21,7 +21,7 @@
 
 		} 
 		
-	#botaopesquisar
+	button
 	{
 		width: 98px; 
 		height: 23px;
