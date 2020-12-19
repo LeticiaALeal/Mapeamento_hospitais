@@ -1,8 +1,5 @@
-/*BUSCA DE ENDEREÇO*/
-
-var busca;
-
-	function buscar(){	
+	var busca;
+	function favoritar(){
 		busca = txtBusca.value;
 		
 	let enderecos = ["Av. John Boyd Dunlop,S/N - Jardim Londres, Campinas - SP, 13034-685",
@@ -15,11 +12,33 @@ var busca;
 					"Av. Orosimbo Maia, 165 - Vila Itapura, Campinas - SP, 13023-002",
 					"R. São Carlos, 369 - Vila Industrial, Campinas - SP, 13035-420",
 					"Av. Barão de Itapura, 1444 - Jardim Guanabara, Campinas - SP, 13020-432"];
-										
+					
+							
 			enderecos.map( (item) => {
 				if(item.includes(busca) === true){
-					alert(item);
+					localStorage.setItem("enderecoSalvo",item);
+					alert('Endereço salvo');
 				}
 			});
 	}
 	
+	function retornarFavorito(){
+		var favoritos = localStorage.getItem("enderecoSalvo");
+		if(favoritos == null){
+			favoritos = "Não há favoritos!";
+		}
+		alert(favoritos);		
+	}
+	
+	function desfavoritar(){
+		var favoritos = localStorage.getItem("enderecoSalvo");
+		if(favoritos == null){
+			favoritos = "Não há favoritos para remover";
+			alert(favoritos);	
+		}
+		else{
+			localStorage.removeItem("enderecoSalvo");
+			alert('Endereço foi desfavoritado');
+		}
+		
+	}

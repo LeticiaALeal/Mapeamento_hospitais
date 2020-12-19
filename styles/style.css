@@ -35,6 +35,10 @@
         
 	}	
 	
+	button:hover{
+		background-color:#D6D6D6;
+	}
+	
 	
 	#titulo
 	{
@@ -103,9 +107,22 @@
 
 	#titulo
 	{
+		/*display: inline-block;
+		position: relative;		
+		padding-bottom: 10px;*/
 		font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 		text-align: center;	
 		
+	}
+	
+	#titulo h1{
+		 /*position: absolute;
+		 top: 145px;
+		 right: 25%;		 
+		 */
+		 font-size: 40px;
+		 color: black;
+		 text-shadow: 0px 0px 2px black;
 	}
 	
 	#menu ul {
@@ -117,6 +134,7 @@
 			background-color: rgba(121, 121, 121, 0.315); 
 			list-style:none;
 			font:80% Tahoma;
+			font-weight: bolder;
 		}
  
 		#menu ul li { display: inline; }
