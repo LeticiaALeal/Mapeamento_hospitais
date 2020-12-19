@@ -19,36 +19,34 @@
 		font-style: oblique;
 		background-color: whitesmoke;
 		border: 1px solid rgb(134, 133, 133);
+		border-radius: 5px;
 
 		} 
 		
 	button
 	{
-		width: 98px; 
-		height: 23px;
+		width: 100px; 
+		height: 28px;
 		background-color: whitesmoke;
 		border: 1px solid rgb(134, 133, 133);
 		font-weight:bold;
+		border-radius: 5px;
+		padding: 5px;
         
 	}	
 	
 	
-	.titulo
+	#titulo
 	{
 		text-align: center;
 		padding-top: 10px;
-		width: 100%;
-		
+		width: 100%;				
 	}
-	/* Para utilização do mapa do Google Maps
-	#mapa{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 1000px;
-		height: 700px;
-		margin: 5px:
-	}*/
+	
+	h1{
+		font-family: Copperplate, Papyrus, fantasy;
+		font-size: 40px;
+	}
 	
 	#mapid 
 	{ 
@@ -58,7 +56,8 @@
 			
 	#box
 	{
-		padding-bottom: 10px;			
+		padding-bottom: 10px;		
+		margin: 50px 0px 0px 50px;
 	}
 	
 	#fotos
@@ -79,6 +78,13 @@
 		padding: 10px;
 		
 	}
+	
+	img.retrato{
+		height: 200px;
+		width: 170px;
+		display: inline; 
+		padding: 10px;
+	}
 		
 	#rodape
 	{
@@ -86,7 +92,8 @@
 		height: 100px;
 		background-color: rgba(121, 121, 121, 0.315);
 		color: rgb(7, 7, 7);
-		text-align: center;				
+		text-align: center;		
+		padding-top: 30px;
 	}
 
 	.bodysobrecontato
@@ -97,13 +104,46 @@
 	#titulo
 	{
 		font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-		text-align: center;
+		text-align: center;	
+		
 	}
+	
+	#menu ul {
+			padding:7px;
+			margin:0px;
+			text-align: center;
+			width: 100%;
+			height: 25px;
+			background-color: rgba(121, 121, 121, 0.315); 
+			list-style:none;
+			font:80% Tahoma;
+		}
+ 
+		#menu ul li { display: inline; }
+ 
+		#menu ul li a {
+			background-color:#EDEDED;
+			color: #333;
+			text-decoration: none;
+			border-bottom:3px solid #EDEDED;
+			padding: 2px 10px;
+			font-size: 20px;
+		}
+ 
+		#menu ul li a:hover {
+			background-color:#D6D6D6;
+			color: #6D6D6D;
+			border-bottom:3px solid #EA0000;
+			font-family:Georgia, 'Times New Roman', Times, serif;    
+		}
 
 	.nos
 	{
 		margin-left: 10px;
+		margin-top: 60px;
 		font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		height: 200px;
+		text-align:justify;
 		
 	}
 
@@ -157,4 +197,25 @@
 	{
 		width: 400px;
 		font-size: 17px;
+	}
+	
+	.link{
+		 width: 100px;
+		 background: #EA0000;/*rgba(0, 0, 255, 0.3);*/
+		 font-weight: bold;
+		 color: white;
+		 border: 0 none;
+		 border-radius: 5px;
+		 cursor: pointer;
+		 padding: 5px ;
+		 margin: 5px 5px;
+		 text-decoration: none;
+	}
+	
+	#sobre{
+		display:block;
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 600px;
 	}
