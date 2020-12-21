@@ -1,35 +1,44 @@
 	var busca;
 	function favoritar(){
-		busca = txtBusca.value;
+		busca = txtBusca.value.toUpperCase();
 		
-	let enderecos = ["Av. John Boyd Dunlop,S/N - Jardim Londres, Campinas - SP, 13034-685",
-					"Av.Ruy Rodrigues, 3434 - Chácara São José, Campinas - SP, 13060-646", 
-					"Av. Pref. Faria Lima, 340 - Parque Italia, Campinas - SP, 13036-902",
-					"R. Vital Brasil, 251 - Cidade Universitária, Campinas - SP, 13083-888",
-					"Rua Eng. Monlevade, 206 - Vila Joao Jorge, Campinas - SP, 13041-304",
-					"Av. Andrade Neves, 402 - Botafogo, Campinas - SP, 13013-908",
-					"Av. Júlio de Mesquita, 571 - Cambuí, Campinas - SP, 13024-180",
-					"Av. Orosimbo Maia, 165 - Vila Itapura, Campinas - SP, 13023-002",
-					"R. São Carlos, 369 - Vila Industrial, Campinas - SP, 13035-420",
-					"Av. Barão de Itapura, 1444 - Jardim Guanabara, Campinas - SP, 13020-432"];
-					
-							
-			enderecos.map( (item) => {
-				if(item.includes(busca) === true){
-					localStorage.setItem("enderecoSalvo",item);
-					alert('Endereço salvo');
+	let enderecos = ["PUC CAMPINAS - AV. JOHN BOYD DUNLOP,S/N - JARDIM LONDRES, CAMPINAS - SP, 13034-685",
+					"HOSPITAL PREFEITO EDIVALDO ORSI - AV.RUY RODRIGUES, 3434 - CHÁCARA SÃO JOSÉ, CAMPINAS - SP, 13060-646", 
+					"MÁRIO GATTI - AV. PREF. FARIA LIMA, 340 - PARQUE ITALIA, CAMPINAS - SP, 13036-902",
+					"HOSPITAL DE CLÍNICAS - R. VITAL BRASIL, 251 - CIDADE UNIVERSITÁRIA, CAMPINAS - SP, 13083-888",
+					"SAMARITANO CAMPINAS - RUA ENG. MONLEVADE, 206 - VILA JOAO JORGE, CAMPINAS - SP, 13041-304",
+					"VERA CRUZ - AV. ANDRADE NEVES, 402 - BOTAFOGO, CAMPINAS - SP, 13013-908",
+					"SANTA CASA - AV. JÚLIO DE MESQUITA, 571 - CAMBUÍ, CAMPINAS - SP, 13024-180",
+					"MATERNIDADE - AV. OROSIMBO MAIA, 165 - VILA ITAPURA, CAMPINAS - SP, 13023-002",
+					"UNIMED CAMPINAS - R. SÃO CARLOS, 369 - VILA INDUSTRIAL, CAMPINAS - SP, 13035-420",
+					"RENASCENÇA - AV. BARÃO DE ITAPURA, 1444 - JARDIM GUANABARA, CAMPINAS - SP, 13020-432"];
+			
+				if(txtBusca.value == ''){
+					alert('Não há itens para favoritar');
 				}
-			});
+				
+				else{
+				enderecos.map( (item) => {
+					
+				if(item.includes(busca) === true){
+						localStorage.setItem("enderecoSalvo",item);					
+						alert('Endereço salvo');
+				}				
+				});								
+			}
 	}
 	
 	function retornarFavorito(){
 		var favoritos = localStorage.getItem("enderecoSalvo");
 		if(favoritos == null){
 			favoritos = "Não há favoritos!";
+			alert(favoritos);
+		}	
+		else{
+			alert(favoritos);	
+		}			
 		}
-		alert(favoritos);		
-	}
-	
+						
 	function desfavoritar(){
 		var favoritos = localStorage.getItem("enderecoSalvo");
 		if(favoritos == null){
@@ -39,6 +48,5 @@
 		else{
 			localStorage.removeItem("enderecoSalvo");
 			alert('Endereço foi desfavoritado');
-		}
-		
+		}		
 	}
