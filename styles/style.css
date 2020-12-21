@@ -107,19 +107,12 @@
 
 	#titulo
 	{
-		/*display: inline-block;
-		position: relative;		
-		padding-bottom: 10px;*/
 		font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 		text-align: center;	
 		
 	}
 	
 	#titulo h1{
-		 /*position: absolute;
-		 top: 145px;
-		 right: 25%;		 
-		 */
 		 font-size: 40px;
 		 color: black;
 		 text-shadow: 0px 0px 2px black;
@@ -219,7 +212,7 @@
 	
 	.link{
 		 width: 100px;
-		 background: #EA0000;/*rgba(0, 0, 255, 0.3);*/
+		 background: #EA0000;
 		 font-weight: bold;
 		 color: white;
 		 border: 0 none;
@@ -237,8 +230,6 @@
 		margin-right: auto;
 		height: 600px;
 	}
-
 	
-
 	.logos{position:relative}
 	.logos:hover{top:-2px;box-shadow:0 2px 2px #666}
